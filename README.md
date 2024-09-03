@@ -38,7 +38,36 @@ int main() {
 		cout << cars << endl; 
 	}
 
-
+    cout<<"-----------Adding values--------------"<< endl;
+    
+    cars.push_back("Tesla"); //adds elements at the end of the vector
+    for (string cars : cars){
+        cout<< cars<<endl;
+    }
+    
+    cout << "-----------removing elements--------------"<<endl;
+    
+    cars.pop_back(); //removes elements form the back of the vector 
+    for (string cars : cars){
+        cout<<cars<<endl;
+    }
+    
+    cout<<"-------checking the size of the vector-------------"<<endl;
+    cout<<cars.size();
+    
+    cout<<"---------clearing the vector------------"<<endl;
+    cout<<cars.empty()<<endl;
+    
+    cout<< "---------------lopping through a vector----------"<<endl;
+    
+    for (string cars : cars){
+        cout<< cars <<endl;
+    }
+    cout<< "------------------------------------"<<endl;
+    
+    for(int i = 0; i<cars.size() ; i++){
+        cout << cars[i] <<endl;
+    }
 
 	return 0;
 }
