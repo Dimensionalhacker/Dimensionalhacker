@@ -21,11 +21,22 @@ int main() {
 	cout << cars[1] << endl;
 	cout << cars[2] << endl;
 
-	cout << "-------adding elements to the front and back of the vector--------" << endl;
+	cout << "------------next method----------------" << endl;
 
 	cout << cars.front() << endl; //gets the first element
 	cout << cars.back() << endl; //gets the last element
 
+
+
+	cout << cars.at(1) << endl; //gets the second element
+	cout << cars.at(2)<< endl; // gets the third element
+
+	cout << "-------changing vector elements------------" << endl;
+
+	cars[1] = "bugatti";
+	for (string cars : cars) {
+		cout << cars << endl; 
+	}
 
 
 
