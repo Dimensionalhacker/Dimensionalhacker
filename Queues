@@ -1,0 +1,43 @@
+#include <iostream>
+#include <stack>
+#include <queue>
+
+using namespace std;
+
+
+
+
+void words() {
+
+	queue <string> names;
+	queue <string> clone;
+	if (names.empty()) {
+
+		cout << "The queue is null" << endl;
+	}
+	else {
+		cout << "The queue is not empty" << endl;
+	}
+	names.push("Dreams");
+	names.push("Donny");
+	names.push("Blinder");
+	names.push("Nash");
+
+	cout << "The queue size is: " << names.size() << endl;
+
+	clone = names;
+	cout << "The size of the queue is: " << names.size() << endl;
+
+	while (clone.empty() == false) {
+		cout << clone.front() << endl;
+		clone.pop();
+	}
+}
+
+
+int main() {
+
+	//stacks();
+	words();
+	return 0;
+}
