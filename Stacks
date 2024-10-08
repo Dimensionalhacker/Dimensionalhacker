@@ -1,0 +1,55 @@
+#include <iostream>
+#include <stack>
+
+using namespace std;
+
+void stacks() {
+	stack <int> numbers;
+	cout << "the size of the stack is: " << numbers.size() << endl;
+	if (numbers.empty()) {
+		cout << "The stack is empty" << endl;
+	}
+	else {
+		cout << "The stack is not empty: " << endl;
+	}
+	numbers.push(50);
+	numbers.push(100);
+	numbers.push(150);
+	numbers.push(200);
+	numbers.push(250);
+
+	
+	if (numbers.empty()) {
+		cout << "The stack is empty" << endl;
+	}
+	else {
+		cout << "The stack is not empty: " << endl;
+	}
+	cout << "the size of the stack is: " << numbers.size() << endl;
+	int removedval = numbers.top();
+	numbers.pop();
+
+	cout << "The top value: " << numbers.top() << endl;
+	cout << "the popped value is: " << removedval << endl;
+
+
+	stack<int>ages;
+	cout << "the stack size of stack is " << ages.size()<<  endl;
+	ages.push(1000);
+	ages.push(2000);
+	ages.push(3000);
+	cout << "the stack size is: " << ages.size() << endl;
+
+	ages.swap(numbers);
+	
+	cout << "the size of ages is: " << ages.size() << endl;
+	cout << "the siz of numbers is: " << numbers.size() << endl;
+
+
+}
+int main() {
+
+	stacks();
+
+	return 0;
+}
